@@ -1,0 +1,9 @@
+setup.py
+wano/__init__.py
+wano/main.py
+wano.egg-info/PKG-INFO
+wano.egg-info/SOURCES.txt
+wano.egg-info/dependency_links.txt
+wano.egg-info/entry_points.txt
+wano.egg-info/requires.txt
+wano.egg-info/top_level.txt

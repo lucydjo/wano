@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wana Editor</title>
+    <!-- Inclure les fichiers CSS de CodeMirror -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css" integrity="sha512-uf06llspW44/LZpHzHT6qBOIVODjWtv4MxCricRxkzvopAlSWnTf6hpZTFxuuZcuNE9CBQhqE0Seu1CoRk84nQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <textarea id="myTextarea">Text to edit</textarea>
+
+    <!-- Inclure le fichier JavaScript de CodeMirror -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js" integrity="sha512-8RnEqURPUc5aqFEN04aQEiPlSAdE0jlFS/9iGgUyNtwFnSKCXhmB6ZTNl7LnDtDWKabJIASzXrzD0K+LYexU9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Script JavaScript pour initialiser CodeMirror -->
+    <script>
+        // Récupérer la référence à la zone de texte
+        var textarea = document.getElementById('myTextarea');
+
+        // Initialiser CodeMirror avec la zone de texte
+        var editor = CodeMirror.fromTextArea(textarea, {
+            lineNumbers: true, // Afficher les numéros de ligne
+            theme: 'default' // Utiliser le thème par défaut (vous pouvez en choisir d'autres)
+        });
+    </script>
+</body>
+</html>
