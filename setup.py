@@ -11,6 +11,7 @@ setup(
     },
     install_requires=[
         'pyngrok',
-        'uuid'
+        'uuid',
+        'flask'
     ],
 )
